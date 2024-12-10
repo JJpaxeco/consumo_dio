@@ -33,8 +33,7 @@ class _HomePageState extends State<HomePage> {
             onPressed: () async {
               final resultado = await getHttp();
               setState(() {
-                respostaFinal =
-                    resultado;
+                respostaFinal = resultado;
               });
             },
             child: Text('Consultar'),
